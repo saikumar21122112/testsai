@@ -64,7 +64,7 @@
       "mergeSqlPipelines": false,
       "pruneBeforeSqlPipelines": true
     },
-    "sharingRequestsEnabled": "INHERIT",
+    "sharingRequestsEnabled": "ENABLED",
     "limitedVisibilityEnabled": "INHERIT",
     "accessRequestsEnabled": "INHERIT",
     "limitsSettings": {
@@ -222,11 +222,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700121710021,
+    "lastModifiedOn": 1700121911741,
     "extendedProperties": {}
   },
   "creationTag": {

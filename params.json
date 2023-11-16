@@ -4,7 +4,19 @@
     "authorizations": []
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "MANAGED_FOLDER",
+        "localName": "VCXyNuEr",
+        "quickSharingEnabled": true,
+        "rules": [
+          {
+            "targetProject": "DKU_TUT_VARCOD",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
@@ -210,11 +222,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "api:9F5PSIIE85SSBVSX"
+      "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700075015596,
+    "lastModifiedOn": 1700119130132,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -15,6 +15,17 @@
             "appearOnFlow": true
           }
         ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "excel_data_prepared",
+        "quickSharingEnabled": false,
+        "rules": [
+          {
+            "targetProject": "DKU_TUT_VARCOD",
+            "appearOnFlow": true
+          }
+        ]
       }
     ]
   },
@@ -222,11 +233,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700121911741,
+    "lastModifiedOn": 1700122131636,
     "extendedProperties": {}
   },
   "creationTag": {

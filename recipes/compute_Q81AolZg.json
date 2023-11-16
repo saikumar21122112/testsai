@@ -3,7 +3,49 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "clearOutputPartition": false
+    "clearOutputPartition": false,
+    "exportParams": {
+      "destinationType": "DOWNLOAD",
+      "temporaryFileBehavior": "AUTO",
+      "originatingOptionId": "excel",
+      "format": {
+        "type": "excel",
+        "params": {
+          "xlsx": true,
+          "preserveNumberFormatting": false,
+          "parseDatesToISO": false,
+          "skipRowsBeforeHeader": 0,
+          "parseHeaderRow": false,
+          "skipRowsAfterHeader": 0,
+          "sheetsToColumn": false,
+          "sheetSelectionMode": "NAMES"
+        }
+      },
+      "destinationDatasetProjectKey": "SIRISHA",
+      "overwriteDestinationDataset": false,
+      "config": {},
+      "applyExplorationFilters": false,
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "selectedPartitions": [],
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    }
   },
   "customMeta": {
     "kv": {}
@@ -34,11 +76,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700118288303,
+    "lastModifiedOn": 1700118301110,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -29,8 +29,182 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "order date date_parsed",
+        "formats": [
+          "MM/dd/yy"
+        ],
+        "columns": [
+          "order date date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "reciv date_parsed",
+        "formats": [
+          "MM/dd/yy"
+        ],
+        "columns": [
+          "reciv date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "order date date",
+          "reciv date"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "order date date_parsed",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 1,
+        "separator": "T",
+        "outColPrefix": "order date date_parsed_",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "reciv date_parsed",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 1,
+        "separator": "T",
+        "outColPrefix": "reciv date_parsed_",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "reciv date_parsed",
+          "order date date_parsed"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateIncrement",
+      "params": {
+        "inCol": "order date date_parsed_0",
+        "outCol": "increment",
+        "incrementBy": "STATIC",
+        "datePart": "DAY",
+        "increment": 6
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateIncrement",
+      "params": {
+        "inCol": "order date date_parsed_0",
+        "outCol": "decrement",
+        "incrementBy": "STATIC",
+        "datePart": "DAY",
+        "increment": -9
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "diff",
+        "input2": "reciv date_parsed_0",
+        "outputUnit": "DAYS",
+        "input1": "order date date_parsed_0",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "order date date_parsed_0",
+        "columns": [
+          "reciv date_parsed_0"
+        ],
+        "reorderAction": "AFTER_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +231,23 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "order date date_parsed_month": 225,
+    "reciv date_parsed": 183,
+    "order date date_parsed_1": 218,
+    "reciv date_parsed_0": 183,
+    "increment": 183,
+    "prodname": 106,
+    "diff": 100,
+    "prodid": 100,
+    "order date date_parsed_year": 218,
+    "order date date_parsed_day": 210,
+    "order date date_parsed_0": 195,
+    "order date date": 155,
+    "reciv date": 120,
+    "decrement": 183,
+    "order date date_parsed": 204
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

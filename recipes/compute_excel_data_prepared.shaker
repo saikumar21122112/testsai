@@ -203,6 +203,65 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "decrement",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 1,
+        "separator": "T",
+        "outColPrefix": "decrement",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 1
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "increment",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 1,
+        "separator": "T",
+        "outColPrefix": "increment",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "decrement",
+          "increment"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -233,6 +292,9 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "order date date_parsed_month": 225,
+    "decrement_0": 127,
+    "decrement_1": 127,
+    "since_decrement_days": 165,
     "reciv date_parsed": 183,
     "order date date_parsed_1": 218,
     "reciv date_parsed_0": 183,
@@ -241,8 +303,11 @@
     "diff": 100,
     "prodid": 100,
     "order date date_parsed_year": 218,
+    "increment0": 183,
     "order date date_parsed_day": 210,
     "order date date_parsed_0": 195,
+    "decrement0": 120,
+    "increment_0": 183,
     "order date date": 155,
     "reciv date": 120,
     "decrement": 183,

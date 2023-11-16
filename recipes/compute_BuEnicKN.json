@@ -3,7 +3,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "output_workbook_name": "data2"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700121215005,
+    "lastModifiedOn": 1700121226063,
     "extendedProperties": {}
   },
   "creationTag": {

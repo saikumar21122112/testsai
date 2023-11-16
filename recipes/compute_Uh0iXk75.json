@@ -1,0 +1,60 @@
+{
+  "type": "CustomCode_to-excel",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_dataset": {
+      "items": [
+        {
+          "ref": "excel_data_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "folder": {
+      "items": [
+        {
+          "ref": "Uh0iXk75",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700119902298,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700119902298,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

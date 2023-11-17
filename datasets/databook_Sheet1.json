@@ -41,11 +41,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700210617902,
+    "lastModifiedOn": 1700210622042,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,12 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"prodid","type":"string"},
+      {"name":"name","type":"string"},
+      {"name":"date","type":"string"},
+      {"name":"orderid","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],

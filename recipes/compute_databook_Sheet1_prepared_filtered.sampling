@@ -12,13 +12,13 @@
       }
     ]
   },
-  "expression": "strval(\u0027date\u0027) \u003e\u003d variables[\"stardate\"]",
+  "expression": "and(strval(\u0027date\u0027) \u003e\u003d variables[\"stardate\"] ,date \u003c\u003d variables[\"enddate\"])",
   "$status": {
     "validated": true,
     "fullyTranslated": true,
     "ok": true,
-    "message": "Column \"var\" doesn\u0027t exist. ",
-    "sql": "\"date\" \u003e\u003d \u00272022-12-23\u0027"
+    "message": "Incorrect formula: \u0027and(strval(\u0027date\u0027) \u003e\u003d variables[\"stardate\"] ,date \u003c\u003d variables[\"enddate\"]\u0027 : Missing \u0027)\u0027 (Parsing error at offset 73)",
+    "sql": "\"date\" \u003e\u003d \u00272022-12-23\u0027 AND \"date\" \u003c\u003d \u00272022-12-26\u0027"
   },
   "distinct": false,
   "enabled": true

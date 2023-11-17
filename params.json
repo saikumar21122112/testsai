@@ -67,7 +67,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "harisai7090",
+              "accessToken": "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",
+              "repository": "harisai7090/sdd"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
@@ -233,11 +246,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700211761986,
+    "lastModifiedOn": 1700223809884,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -3,11 +3,11 @@
   "name": "aa",
   "active": true,
   "creationTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700199018102,
+    "lastModifiedOn": 1700199734851,
     "extendedProperties": {}
   },
   "versionTag": {
@@ -99,6 +99,33 @@
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
           "autoUpdateSchemaBeforeEachRecipeRun": true,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_excel_data_1",
+        "type": "build_flowitem",
+        "name": "build dataset excel_data",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "excel_data"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
           "stopAtFlowZoneBoundary": false,
           "refreshHiveMetastore": true,
           "handleWarningsAs": "WARNING",

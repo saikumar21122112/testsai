@@ -9,7 +9,11 @@
     "readParams": {
       "mode": "AUTO",
       "autoModeRepartitionInto": 10,
-      "map": {}
+      "map": {
+        "databook_Sheet1_prepared_filtered": {
+          "repartition": 10
+        }
+      }
     },
     "sparkConfig": {
       "inheritConf": "spark-XS-2-workers-of-1-CPU-3Gb-Ram",
@@ -49,11 +53,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700215657559,
+    "lastModifiedOn": 1700215663839,
     "extendedProperties": {}
   },
   "creationTag": {

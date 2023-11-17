@@ -65,7 +65,6 @@
       "zonesGraphForJobs": true
     },
     "gitCommitMode": "AUTO",
-    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": [
@@ -247,11 +246,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700223992355,
+    "lastModifiedOn": 1700224831502,
     "extendedProperties": {}
   },
   "creationTag": {

@@ -262,6 +262,17 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "diff_copy",
+        "inputColumn": "diff"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -296,6 +307,7 @@
     "decrement_1": 127,
     "since_decrement_days": 165,
     "reciv date_parsed": 183,
+    "diff_copy": 100,
     "order date date_parsed_1": 218,
     "reciv date_parsed_0": 183,
     "increment": 183,

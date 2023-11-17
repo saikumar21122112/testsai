@@ -11,11 +11,11 @@
     "extendedProperties": {}
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700199734851,
+    "lastModifiedOn": 1700200509686,
     "extendedProperties": {}
   },
   "checklists": {
@@ -44,7 +44,7 @@
         "minute": 10,
         "hour": 11,
         "timezone": "SERVER",
-        "lastUpdate": 1700199734851
+        "lastUpdate": 1700200509686
       }
     }
   ],
@@ -95,37 +95,25 @@
             {
               "type": "DATASET",
               "itemId": "excel_data"
+            },
+            {
+              "type": "DATASET",
+              "itemId": "excel_data_prepared",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "exceldatproject2",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "Uh0iXk75",
+              "partitionsSpec": ""
             }
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
           "autoUpdateSchemaBeforeEachRecipeRun": true,
-          "stopAtFlowZoneBoundary": false,
-          "refreshHiveMetastore": true,
-          "handleWarningsAs": "WARNING",
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_d_excel_data_1",
-        "type": "build_flowitem",
-        "name": "build dataset excel_data",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "excel_data"
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "autoUpdateSchemaBeforeEachRecipeRun": false,
           "stopAtFlowZoneBoundary": false,
           "refreshHiveMetastore": true,
           "handleWarningsAs": "WARNING",

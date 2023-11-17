@@ -1,0 +1,51 @@
+{
+  "tokenizationParam": {
+    "engine": "SIMPLE",
+    "splitMechanism": "WHITESPACE"
+  },
+  "owner": "chinnathota7090@gmail.com",
+  "name": "label_excel_data_1",
+  "type": "NAMED_ENTITY_EXTRACTION",
+  "labelColumnName": "labels",
+  "extraColumns": [],
+  "inputs": {
+    "metadata": {
+      "items": [
+        {
+          "ref": "excel_data_1"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": []
+    }
+  },
+  "classes": [],
+  "instructions": "",
+  "minNbAnnotatorsPerRecord": 1,
+  "autoValidateAnswers": false,
+  "permissions": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700201402754,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700201402754,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

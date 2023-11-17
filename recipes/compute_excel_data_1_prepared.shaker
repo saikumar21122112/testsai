@@ -29,8 +29,27 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "prodname",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +76,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "order date date": 155,
+    "reciv date": 120,
+    "prodname": 106,
+    "prodid": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

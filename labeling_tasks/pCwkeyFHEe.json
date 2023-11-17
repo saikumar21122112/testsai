@@ -1,4 +1,5 @@
 {
+  "dataColumn": "prodid",
   "tokenizationParam": {
     "engine": "SIMPLE",
     "splitMechanism": "WHITESPACE"
@@ -7,7 +8,9 @@
   "name": "label_excel_data_1",
   "type": "NAMED_ENTITY_EXTRACTION",
   "labelColumnName": "labels",
-  "extraColumns": [],
+  "extraColumns": [
+    "prodid"
+  ],
   "inputs": {
     "metadata": {
       "items": [
@@ -28,11 +31,11 @@
   "autoValidateAnswers": false,
   "permissions": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700201402754,
+    "lastModifiedOn": 1700201427830,
     "extendedProperties": {}
   },
   "creationTag": {

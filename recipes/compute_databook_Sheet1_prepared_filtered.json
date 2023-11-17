@@ -16,7 +16,7 @@
         "rules": []
       },
       "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 100000,
+      "maxRecords": 100000000,
       "targetRatio": 0.02,
       "ascending": true,
       "withinFirstN": -1,
@@ -88,11 +88,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700212224913,
+    "lastModifiedOn": 1700212360279,
     "extendedProperties": {}
   },
   "creationTag": {

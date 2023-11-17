@@ -1,4 +1,25 @@
 {
+  "uiData": {
+    "mode": "CUSTOM",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "CUSTOM",
+    "conditions": [
+      {
+        "input": "date",
+        "col": "name",
+        "$showList": false,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "expression": "strval(\u0027date\u0027) \u003e\u003d variables[\"stardate\"]",
+  "$status": {
+    "validated": true,
+    "fullyTranslated": true,
+    "ok": true,
+    "message": "Column \"var\" doesn\u0027t exist. ",
+    "sql": "\"date\" \u003e\u003d \u00272022-12-23\u0027"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }

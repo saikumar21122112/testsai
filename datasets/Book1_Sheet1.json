@@ -41,11 +41,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chinnathota7090@gmail.com"
     },
-    "lastModifiedOn": 1700210611587,
+    "lastModifiedOn": 1700210611684,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,10 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"id","type":"string"},
+      {"name":"name","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],

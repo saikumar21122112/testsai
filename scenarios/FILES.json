@@ -1,0 +1,37 @@
+{
+  "type": "step_based",
+  "name": "files",
+  "active": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700200876130,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chinnathota7090@gmail.com"
+    },
+    "lastModifiedOn": 1700200876130,
+    "extendedProperties": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {}
+}
